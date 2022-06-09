@@ -4,8 +4,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from datetime import datetime,date
 from ckeditor.fields import RichTextField
-from tkinter import CASCADE
-
+import tkinter
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=255)
