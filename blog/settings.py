@@ -134,7 +134,7 @@ MEDIA_URL = '/media/'
 # This tells how to create an media folder(for more about BASER_DIR see line 17)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
