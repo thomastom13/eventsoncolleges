@@ -123,22 +123,23 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"static"),
-    # 'Blog/static/',
-]
+# This static dirs is dummy not in use
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,"static"),
+#     'Blog/static/',
+# ]
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
 # For Image (This media folder will be created automatically)
 MEDIA_URL = '/media/'
 # This tells how to create an media folder(for more about BASER_DIR see line 17)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
